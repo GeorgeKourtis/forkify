@@ -1,7 +1,12 @@
 .recipe {
   background-color: $color-grey-light-1;
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 0;
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1/ -1;
+  }
+  @media only screen and (max-width: $bp-medium) {
     width: 100%;
   }
   ///////////
