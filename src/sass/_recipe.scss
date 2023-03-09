@@ -1,6 +1,9 @@
 .recipe {
   background-color: $color-grey-light-1;
-
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+    width: 100%;
+  }
   ///////////
   // FIGURE
   &__fig {
@@ -8,6 +11,10 @@
     position: relative;
     // transform: scale(1.04) translateY(-1px);
     transform-origin: top;
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0;
+      width: auto;
+    }
 
     &::before {
       content: '';
@@ -60,6 +67,11 @@
     @media only screen and (max-width: $bp-medium) {
       width: 70%;
     }
+    @media only screen and (max-width: $bp-small) {
+      width: 70%;
+      font-size: 2rem;
+      transform: translate(-50%, -10%) skewY(-6deg);
+    }
   }
 
   ///////////
@@ -68,6 +80,9 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0;
+    }
   }
 
   &__info {
@@ -78,6 +93,12 @@
 
     &:not(:last-child) {
       margin-right: 4.5rem;
+      @media only screen and (max-width: $bp-medium) {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
     }
   }
 
@@ -112,6 +133,11 @@
     margin-left: auto;
     margin-right: 1.75rem;
 
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+      font-size: 1rem;
+      margin-right: 0;
+    }
     svg {
       height: 2.25rem;
       width: 2.25rem;
@@ -129,6 +155,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+      font-size: 1rem;
+    }
   }
 
   &__ingredient-list {

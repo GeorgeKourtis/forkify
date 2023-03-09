@@ -135,6 +135,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  window.screen.width < 980 && resultsView._addToggleButton();
 };
 
 init();
