@@ -23,10 +23,10 @@ class ResultsView extends View {
       this._searchResults.insertAdjacentHTML('afterbegin', html);
       this._button = document.querySelector('.toggle-results');
       this._searchResults.classList.add('closed');
-    }
 
-    this._button.addEventListener('click', this._toggleButton.bind(this));
-    console.log(this);
+      this._button.addEventListener('click', this._toggleButton.bind(this));
+      this._searchResults.classList.add('closed');
+    }
   }
 
   _toggleButton() {
